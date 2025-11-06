@@ -1,0 +1,10 @@
+# Basic formula
+  WHERE conditional
+
+operation conditional:
+  ( =, <, <=, >, >=, != )
+
+# Contoh query
+  SELECT id, product, price
+  FROM products
+  WHERE price > 100000 
