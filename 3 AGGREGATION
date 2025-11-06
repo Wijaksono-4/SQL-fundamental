@@ -1,0 +1,6 @@
+# AGGREGATION adalah bekerja dengan menggabungkan banyak baris menjadi satu nilai hasil.
+  SUM( nama_kolom )    menghitung jumlah nilai 
+  AVG( nama_kolom )    menghitung rata-rata
+  COUNT( nama kolom )  menghitung total record
+  MIN( nama_kolom )    nilai terendah
+  MAX( nama_kolom )    nilai tertinggi
