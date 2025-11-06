@@ -1,0 +1,11 @@
+# Untuk mengurutkan data
+  ORDER BY nama_kolom 
+
+  # terdapat 2 cara mengurutkan
+    DESC (mengurutkan data dari nilai tertinggi ke terendah)
+    ASC  (mengurutkan data dari nilai terendah ke tertinggi)
+
+# Contoh query
+  SELECT id_customer, total_price
+  FROM transaction
+  ORDER BY total_price DESC
