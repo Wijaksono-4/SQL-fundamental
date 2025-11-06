@@ -1,8 +1,8 @@
-#structure basic penulisan:
+# Structure basic penulisan:
   SELECT kolom1, kolom2
   FROM tabel;
   
-#fungsi yang sering di tambahakan:  
+# Fungsi yang sering di tambahakan:  
 
   #alias(memeberiakan nama baru)
     kolom1 AS nama_kolom_baru
@@ -13,7 +13,7 @@
   #membatasi jumlah baris
     LIMIT 5
 
-#contoh query:
+# Contoh query:
   SELECT id_transaction, (quantity * price) as total_price
   FROM transaction
   LIMIT 5;
