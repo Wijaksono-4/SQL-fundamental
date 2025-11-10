@@ -2,12 +2,12 @@
   SELECT kolom1, kolom2
   FROM tabel;
   
-# Fungsi yang sering di tambahakan:  
+# Fungsi yang sering di tambahkan:  
 
-  #alias(memeberiakan nama baru)
+  #alias(memeberikan nama baru)
     kolom1 AS nama_kolom_baru
     
-  #operasional matematik
+  #operasional matematik (+/-/*/:)
     (kolom1 * kolom2) as nama_kolom_baru
     
   #membatasi jumlah baris
@@ -17,3 +17,11 @@
   SELECT id_transaction, (quantity * price) as total_price
   FROM transaction
   LIMIT 5;
+
+# tabel awal                                     # hasil output
+| id_transaction | quantity |  price |           | id_transaction | total price |
+|      25897     |    2     | 125000 |           |      25897     |    250000   |
+|      25898     |    4     | 400000 |           |      25898     |   1200000   |
+|      25899     |    1     | 658000 |           |      25899     |    658000   |
+|      25900     |    4     | 140000 |           |      25900     |    560000   |
+|      25901     |    1     | 190000 |           |      25901     |    190000   |
