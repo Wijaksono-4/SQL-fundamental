@@ -1,0 +1,13 @@
+# Basic formula GROUP BY
+  SELECT kolom1, kolom2, kolom3
+  FROM tabel
+  GROUP BY kolom1
+
+# Basic formula HAVING 
+  SELECT kolom1, kolom2, kolom3
+  FROM tabel
+  GROUP BY kolom1
+  HAVING conditional
+
+# Contoh query
+  SELECT 
