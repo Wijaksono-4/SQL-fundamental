@@ -1,0 +1,18 @@
+CASE adalah conditional expression di SQL, mirip seperti IF–ELSE, yang digunakan untuk membuat nilai baru berdasarkan kondisi tertentu.
+
+# Basic Query
+  CASE 
+    WHEN conditional_1 THEN output_1
+    WHEN conditional_2 THEN outut_2
+    ELSE default_output
+  END
+
+# Contoh Query
+  SELECT                               |    SELECT store, month, total_sales
+    CASE                               |    FROM sales  
+      WHEN age > 50 THEN tua           |    ORDER BY
+      WHEN age > 20 THEN dewasa        |      CASE WHEN city = "jakarta" THEN 1
+      WHEN age > 12 THEN remaja        |           WHEN city = "bekasi" THEN 2
+      ELSE anak-anak                   |           ELSE 3
+    END AS group_age                   |      END,
+  FROM cityzens;                       |      total_sales;
