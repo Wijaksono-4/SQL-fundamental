@@ -10,4 +10,7 @@
   HAVING conditional
 
 # Contoh query
-  SELECT 
+  SELECT store, month, SUM(total_sales)
+  FROM sales
+  GROUP BY store, month
+  HAVING SUM(total_sales) > 25000000
