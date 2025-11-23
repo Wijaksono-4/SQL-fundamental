@@ -1,0 +1,13 @@
+        |          WHERE         |           HAVING            |
+Tujuan  |    Memfilter baris     |  memfilter hasil aggregasi  |
+Data    |    untuk semua data    |    untuk data aggregasi     |
+        | Sebelum Grouping data  |    setelah grouping data    |
+        |          WHERE         |           HAVING            |
+        |          WHERE         |           HAVING            |
+
+  # Contoh penggunaan bersama
+    SELECT store, month, SUM(total_sales) as total_sales
+    FROM sales
+    WHERE city IN ("Jakarta", "Bekasi", "Depok" )
+    GROUP BY store, month
+    HAVING SUM(total_store) > 25000000
